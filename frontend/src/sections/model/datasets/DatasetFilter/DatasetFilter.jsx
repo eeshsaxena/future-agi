@@ -77,9 +77,12 @@ const DatasetFilter = ({
                 color="primary"
                 onClick={() => addFilter()}
                 startIcon={<Iconify icon="ic:round-plus" />}
-              >
-                Add filter
-              </Button>
+                sx={{
+                  "& .MuiButton-startIcon": {
+                    margin: 0,
+                  },
+                }}
+              />
             </Box>
           </Card>
         </Box>

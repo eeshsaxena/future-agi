@@ -59,7 +59,6 @@ const DatasetFilterRow = ({
           onChange={(e) => {
             const newValue = e.target.value;
             const property = properties.find((p) => p.value === newValue);
-            if (!property) return;
             setValuesForIndex(idx, {
               key: newValue,
               dataType: property.dataType,
